@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="Nathcat's Screen Sharer",
-    url='',
+    url='https://github.com/Nathcat/Screen-Sharer',
     author="Nathan 'Nathcat' Baines",
     author_email='nathan.richard.baines@gmail.com',
 
