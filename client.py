@@ -17,3 +17,6 @@ def client(host, port):
             s.sendall(data)
 
         s.shutdown(SHUT_RDWR)
+
+
+client("localhost", 1234)

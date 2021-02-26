@@ -1,8 +1,8 @@
 from socket import *
 import pickle
 import struct
-from ScreenShare import test
-
+#from ScreenShare import test
+import test
 
 def server(port):
     app = test.Application()
@@ -28,3 +28,6 @@ def server(port):
             data = pickle.loads(total_data)
 
             app.display(data)
+
+
+server(1234)
