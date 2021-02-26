@@ -1,7 +1,6 @@
 from socket import *
 import pickle
 import struct
-#from ScreenShare import test
 import test
 
 def server(port):
@@ -30,4 +29,4 @@ def server(port):
             app.display(data)
 
 
-server(1234)
+server(1111)
