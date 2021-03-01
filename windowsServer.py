@@ -1,10 +1,10 @@
 from socket import *
 import pickle
 import struct
-import test
+import windowsDisplay
 
 def server(port):
-    app = test.Application()
+    app = windowsDisplay.Application()
 
     with socket(AF_INET, SOCK_STREAM) as s:
         s.bind(("", port))
