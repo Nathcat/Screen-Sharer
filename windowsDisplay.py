@@ -8,3 +8,4 @@ class Application:
         # Convert RGB to BGR
         img = img[:, :, ::-1].copy()
         cv2.imshow("Screen sharer", img)
+        cv2.waitKey()
