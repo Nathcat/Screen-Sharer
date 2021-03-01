@@ -4,6 +4,22 @@ import pyautogui as pygui
 import pickle
 import struct
 
+import mss
+import mss.tools
+from PIL import Image
+
+
+width, height= pygui.size()
+capture_region = {'top': 0, 'left': 0, 'width': 400, 'height': 300}
+sct = mss.mss()
+
+
+def screenshot():
+    img = sct.grab(capture_region)
+    img = Image.frombytes("RGB", img.size, img.bgra, "raw", "BGRX")
+
+    return img
+
 
 def client(host, port):
     with socket(AF_INET, SOCK_STREAM) as s:
@@ -19,4 +35,4 @@ def client(host, port):
         s.shutdown(SHUT_RDWR)
 
 
-client("localhost", 1111)
+client("localhost", 1234)
