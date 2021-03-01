@@ -2,4 +2,4 @@
 <p>This project is a work in progress, i'm not totally happy with it's performance yet<br>
 but it should get there with some improvement.</p>
 <br><br>
-<p>Version 0.3</p>
+<p>Version 0.4</p>
