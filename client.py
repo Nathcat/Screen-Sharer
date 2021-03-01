@@ -10,7 +10,7 @@ from PIL import Image
 
 
 width, height= pygui.size()
-capture_region = {'top': 0, 'left': 0, 'width': 400, 'height': 300}
+capture_region = {'top': 0, 'left': 0, 'width': width, 'height': height}
 sct = mss.mss()
 
 
